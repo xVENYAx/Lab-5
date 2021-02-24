@@ -8,13 +8,43 @@
         Title="MainWindow" Height="450" Width="800">
 
     <Window.Resources>
-        <Style TargetType="{x:Type Ellipse}">
+        <Style TargetType="{x:Type Ellipse}" x:Key="EpicEllipse">
             <Setter Property="Stroke" Value="Black"/>
+            <Setter Property="Height" Value="55" />
+            <Setter Property="Width" Value="70" />
             <Setter Property="Fill">
-                <RadialGradientBrush RadiusX="0.1" RadiusY="0.1" SpreadMethod="Repeat">
-                    <GradientStop Offset="0" Color="Blue" />
-                    <GradientStop Offset="0.763" Color="AntiqueWhite" />
-                </RadialGradientBrush>
+                <Setter.Value>
+                    <RadialGradientBrush RadiusX="0.1" RadiusY="0.1" SpreadMethod="Repeat">
+                        <GradientStop Offset="0" Color="Green" />
+                        <GradientStop Offset="0.763" Color="Yellow" />
+                    </RadialGradientBrush>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style TargetType="{x:Type Ellipse}" x:Key="TopEllipse">
+            <Setter Property="Stroke" Value="Black"/>
+            <Setter Property="Height" Value="50" />
+            <Setter Property="Width" Value="50" />
+            <Setter Property="Fill">
+                <Setter.Value>
+                    <RadialGradientBrush RadiusX="0.1" RadiusY="0.1" SpreadMethod="Repeat">
+                        <GradientStop Offset="0" Color="Red" />
+                        <GradientStop Offset="0.763" Color="Pink" />
+                    </RadialGradientBrush>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style TargetType="{x:Type Ellipse}" x:Key="GoodEllipse">
+            <Setter Property="Stroke" Value="Black"/>
+            <Setter Property="Height" Value="65" />
+            <Setter Property="Width" Value="80" />
+            <Setter Property="Fill">
+                <Setter.Value>
+                    <RadialGradientBrush RadiusX="0.1" RadiusY="0.1" SpreadMethod="Repeat">
+                        <GradientStop Offset="0" Color="Red" />
+                        <GradientStop Offset="0.763" Color="PaleGreen" />
+                    </RadialGradientBrush>
+                </Setter.Value>
             </Setter>
         </Style>
     </Window.Resources>
@@ -69,86 +99,36 @@
                     </Path.Data>
                 </Path>
 
-                <Ellipse Width="80" Height="60"  Margin="10" Canvas.Left="122" Canvas.Top="12">
-                    <Ellipse.Fill>
-                        <RadialGradientBrush RadiusX="0.1" RadiusY="0.1" SpreadMethod="Repeat">
-                            <GradientStop Offset="0" Color="Blue" />
-                            <GradientStop Offset="0.763" Color="AntiqueWhite" />
-                        </RadialGradientBrush>
-                    </Ellipse.Fill>
-                </Ellipse>
-                <Ellipse Width="80" Height="60"  Margin="10" Canvas.Left="112" Canvas.Top="37">
-                    <Ellipse.Fill>
-                        <RadialGradientBrush RadiusX="0.1" RadiusY="0.1" SpreadMethod="Repeat">
-                            <GradientStop Offset="0" Color="Blue" />
-                            <GradientStop Offset="0.763" Color="AntiqueWhite" />
-                        </RadialGradientBrush>
-                    </Ellipse.Fill>
-                </Ellipse>
-                <Ellipse Width="80" Height="60"  Margin="10" Canvas.Left="70" Canvas.Top="37">
-                    <Ellipse.Fill>
-                        <RadialGradientBrush RadiusX="0.1" RadiusY="0.1" SpreadMethod="Repeat">
-                            <GradientStop Offset="0" Color="Blue" />
-                            <GradientStop Offset="0.763" Color="AntiqueWhite" />
-                        </RadialGradientBrush>
-                    </Ellipse.Fill>
-                </Ellipse>
-                <Ellipse Width="80" Height="60"  Margin="10" Canvas.Left="84" Canvas.Top="7">
-                    <Ellipse.Fill>
-                        <RadialGradientBrush RadiusX="0.1" RadiusY="0.1" SpreadMethod="Repeat">
-                            <GradientStop Offset="0" Color="Blue" />
-                            <GradientStop Offset="0.763" Color="AntiqueWhite" />
-                        </RadialGradientBrush>
-                    </Ellipse.Fill>
-                </Ellipse>
-                <Ellipse Width="80" Height="60"  Margin="10" Canvas.Left="44" Canvas.Top="2">
-                    <Ellipse.Fill>
-                        <RadialGradientBrush RadiusX="0.1" RadiusY="0.1" SpreadMethod="Repeat">
-                            <GradientStop Offset="0" Color="Blue" />
-                            <GradientStop Offset="0.763" Color="AntiqueWhite" />
-                        </RadialGradientBrush>
-                    </Ellipse.Fill>
-                </Ellipse>
-                <Ellipse Width="80" Height="60"  Margin="10" Canvas.Left="608" Canvas.Top="17">
-                    <Ellipse.Fill>
-                        <RadialGradientBrush RadiusX="0.1" RadiusY="0.1" SpreadMethod="Repeat">
-                            <GradientStop Offset="0" Color="Blue" />
-                            <GradientStop Offset="0.763" Color="AntiqueWhite" />
-                        </RadialGradientBrush>
-                    </Ellipse.Fill>
-                </Ellipse>
-                <Ellipse Width="80" Height="60"  Margin="10" Canvas.Left="583" Canvas.Top="42">
-                    <Ellipse.Fill>
-                        <RadialGradientBrush RadiusX="0.1" RadiusY="0.1" SpreadMethod="Repeat">
-                            <GradientStop Offset="0" Color="Blue" />
-                            <GradientStop Offset="0.763" Color="AntiqueWhite" />
-                        </RadialGradientBrush>
-                    </Ellipse.Fill>
-                </Ellipse>
-                <Ellipse Width="80" Height="60"  Margin="10" Canvas.Left="548" Canvas.Top="42">
-                    <Ellipse.Fill>
-                        <RadialGradientBrush RadiusX="0.1" RadiusY="0.1" SpreadMethod="Repeat">
-                            <GradientStop Offset="0" Color="Blue" />
-                            <GradientStop Offset="0.763" Color="AntiqueWhite" />
-                        </RadialGradientBrush>
-                    </Ellipse.Fill>
-                </Ellipse>
-                <Ellipse Width="80" Height="60"  Margin="10" Canvas.Left="568" Canvas.Top="12">
-                    <Ellipse.Fill>
-                        <RadialGradientBrush RadiusX="0.1" RadiusY="0.1" SpreadMethod="Repeat">
-                            <GradientStop Offset="0" Color="Blue" />
-                            <GradientStop Offset="0.763" Color="AntiqueWhite" />
-                        </RadialGradientBrush>
-                    </Ellipse.Fill>
-                </Ellipse>
-                <Ellipse Width="80" Height="60"  Margin="10" Canvas.Left="518" Canvas.Top="12">
-                    <Ellipse.Fill>
-                        <RadialGradientBrush RadiusX="0.1" RadiusY="0.1" SpreadMethod="Repeat">
-                            <GradientStop Offset="0" Color="Blue" />
-                            <GradientStop Offset="0.763" Color="AntiqueWhite" />
-                        </RadialGradientBrush>
-                    </Ellipse.Fill>
-                </Ellipse>
+                <Ellipse  Margin="10" Canvas.Left="129" Canvas.Top="10"
+                         Style="{StaticResource TopEllipse}"/>
+
+                <Ellipse  Margin="10" Canvas.Left="112" Canvas.Top="37"
+                         Style="{StaticResource EpicEllipse}"/>
+
+                <Ellipse Margin="10" Canvas.Left="70" Canvas.Top="37"
+                         Style="{StaticResource GoodEllipse}"/>
+
+                <Ellipse Margin="10" Canvas.Left="84" Canvas.Top="7"
+                         Style="{StaticResource EpicEllipse}"/>
+
+                <Ellipse Margin="10" Canvas.Left="67" Canvas.Top="20"
+                         Style="{StaticResource TopEllipse}"/>
+
+                <Ellipse Margin="10" Canvas.Left="588" Canvas.Top="12"
+                         Style="{StaticResource GoodEllipse}"/>
+
+                <Ellipse Margin="10" Canvas.Left="583" Canvas.Top="42"
+                         Style="{StaticResource EpicEllipse}"/>
+
+                <Ellipse Margin="10" Canvas.Left="548" Canvas.Top="42"
+                         Style="{StaticResource GoodEllipse}"/>
+
+                <Ellipse Margin="10" Canvas.Left="573" Canvas.Top="17"
+                         Style="{StaticResource TopEllipse}"/>
+
+                <Ellipse Margin="10" Canvas.Left="518" Canvas.Top="12"
+                         Style="{StaticResource EpicEllipse}"/>
+
 
                 <Polygon   Points="50, -150, 150, 0, 300, 0" Canvas.Left="71" Canvas.Top="218" RenderTransformOrigin="0.5,0.5" Height="1" >
                     <Polygon.RenderTransform>
